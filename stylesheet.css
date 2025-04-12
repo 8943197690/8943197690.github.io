@@ -1,0 +1,108 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url("background.png") no-repeat center center fixed; /* Set the background image */
+    background-size: cover; /* Ensure the image covers the entire viewport */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; /* Ensure the body is positioned properly */
+    z-index: 1  ; /* Background image stays at the lowest layer */
+}
+
+/* Login container */
+.login-container {
+    background: rgba(255, 255, 255, 0.188); /* Add a semi-transparent white background */
+    backdrop-filter: blur(5px); /* Apply a blur effect to the background */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Add a border for better visibility */
+    width: 380px;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a shadow for better visibility */
+    text-align: center;
+    }
+
+/* Heading */
+.login-container h1 {
+    font-size: 44px;
+    margin-bottom: 20px;
+    color: #33333392;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+
+/* Center-align input fields */
+.login-container form {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+    align-items: center; /* Center-align inputs horizontally */
+}
+
+.login-container input[type="text"],
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    text-decoration-color: black;
+    width: 80%; /* Adjust width to make it look centered */
+    padding: 20px;
+    margin: 10px 0;
+        background: radial-gradient(circle at left, #ffffff9c, #a3a3a35a); /* Gradient background */
+    border: 1px solid #ffffff;
+    border-radius: 40px;
+    font-size: 16px;
+    backdrop-filter: blur(50px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a blur effect to the edges */
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Optional: Add hover effect for more emphasis */
+.login-container input[type="text"]:hover,
+.login-container input[type="email"]:hover,
+.login-container input[type="password"]:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Stronger blur on hover */
+}
+
+/* Aesthetic Submit Button */
+.login-container button {
+    width: 45%; /* Keep the width as needed */
+    padding: 20px;
+    background: linear-gradient(to right, #305e5c8c, #2f564582); /* Gradient background */
+    color: white;
+    border: none;
+    margin-top: 8px;
+    margin-bottom: 50px;
+    margin-left: 0; /* Align the button to the left */
+    backdrop-filter: blur(50px);
+    border-radius: 40px; /* Rounded corners */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.login-container button:hover {
+    background: linear-gradient(to right, #45a049, #4CAF50); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Links */
+.login-container a {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+.login-container input::placeholder {
+    color: rgba(0, 0, 0, 0.574);
+    font-style:bold;
+    opacity:1;
+}
